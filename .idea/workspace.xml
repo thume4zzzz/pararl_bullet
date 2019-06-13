@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0fd140cd-0769-446c-a2e9-644a0851a716" name="Default Changelist" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/pararl-bullet.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiments/myexp/myexp_demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/experiment/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/experiment/common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/experiment/myexp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/experiment/util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/basic/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/basic/car.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/arm.SLDPRT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/arm.STL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/arm.dae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/arm.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/arm_half_1.STL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/arm_half_1.dae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/arm_half_1.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/arm_half_2.STL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/arm_half_2.dae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/arm_half_2.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/arm_mico.STL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/arm_mico.dae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/arm_mico.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/base.STL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/base.dae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/base.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/finger_distal.STL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/finger_distal.dae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/finger_distal.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/finger_proximal.STL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/finger_proximal.dae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/finger_proximal.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/forearm.STL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/forearm.dae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/forearm.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/forearm_mico.STL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/forearm_mico.dae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/forearm_mico.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/hand_2finger.STL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/hand_2finger.dae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/hand_2finger.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/hand_3finger.STL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/hand_3finger.dae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/hand_3finger.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/obj.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/obj/arm.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/obj/arm_half_1.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/obj/arm_half_2.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/obj/arm_mico.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/obj/base.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/obj/finger_distal.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/obj/finger_proximal.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/obj/forearm.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/obj/forearm_mico.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/obj/hand_2finger.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/obj/hand_3finger.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/obj/shoulder.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/obj/wrist.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/obj/wrist_spherical_1.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/obj/wrist_spherical_2.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/ring_big.STL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/ring_big.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/ring_small.STL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/ring_small.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/shoulder.STL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/shoulder.dae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/shoulder.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/wrist.STL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/wrist.dae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/wrist.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/wrist_spherical_1.STL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/wrist_spherical_1.dae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/wrist_spherical_1.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/wrist_spherical_2.STL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/wrist_spherical_2.dae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/meshes/wrist_spherical_2.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/urdf/Cube.urdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/urdf/TeaCup.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/urdf/TeaCup.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/urdf/TeaCup.urdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/urdf/coffee_cup.blend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/urdf/coffee_cup.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/urdf/coffee_cup.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/urdf/coffee_cup.urdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/urdf/cube.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/urdf/cube.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/urdf/cube.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/urdf/j2n6s300.urdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/urdf/j2s7s300.urdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/urdf/model.sdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/urdf/plane.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/urdf/plane.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/urdf/plane.urdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/urdf/racecar.urdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/urdf/racecar_differential.urdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/urdf/tea_cup.blend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/urdf/teacup_model.sdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/urdf/teacup_model_mesh_collision.sdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/urdf/two_arm_robot_example_standalone.xacro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/assets/urdf/vector.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/cup_push.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/kinova.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/bullet/reach.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/env.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/gym_wrapper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/mujoco/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/mujoco/assets/common/materials.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/mujoco/assets/common/skybox.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/mujoco/assets/common/visual.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/mujoco/assets/inverted_pendulum.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/mujoco/assets/pointmass.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/mujoco/assets/reacher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/mujoco/reacher.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/gym/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/util/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/util/ec2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/util/json.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/util/logging.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otter/util/noise.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_cup_push.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_gym.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_gym_env.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_reach_env.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pararl-master/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pararl-master/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pararl-master/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pararl-master/.idea/pararl-master.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pararl-master/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pararl-master/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="pararl-bullet" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/otter/gym/mujoco/reacher.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1065">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/otter/gym/bullet/cup_push.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4560">
+              <caret line="304" column="58" selection-start-line="304" selection-start-column="58" selection-end-line="304" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/otter/gym/bullet/kinova.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3885">
+              <caret line="259" column="6" selection-start-line="259" selection-start-column="6" selection-end-line="259" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/otter/gym/env.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1455">
+              <caret line="105" column="16" selection-start-line="105" selection-start-column="16" selection-end-line="105" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/test_reach_env.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+              <folding>
+                <element signature="e#1#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test_cup_push.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="52" selection-end-column="27" />
+              <folding>
+                <element signature="e#1#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/otter/gym/bullet/reach.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3180">
+              <caret line="212" column="44" selection-start-line="212" selection-start-column="44" selection-end-line="212" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.local/lib/python3.5/site-packages/gym/envs/registration.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1260">
+              <caret line="88" selection-start-line="88" selection-end-line="88" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getExtendedObservation()</find>
+      <find>_reset</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/otter/gym/mujoco/assets/cup_push.py" />
+        <option value="$PROJECT_DIR$/otter/gym/bullet/__init__.py" />
+        <option value="$PROJECT_DIR$/otter/gym/basic/car.py" />
+        <option value="$PROJECT_DIR$/otter/gym/__init__.py" />
+        <option value="$PROJECT_DIR$/test/test_cup_push.py" />
+        <option value="$PROJECT_DIR$/otter/gym/bullet/kinova.py" />
+        <option value="$PROJECT_DIR$/test/test_gym_env.py" />
+        <option value="$PROJECT_DIR$/otter/gym/mujoco/reacher.py" />
+        <option value="$PROJECT_DIR$/otter/gym/bullet/reacher.py" />
+        <option value="$PROJECT_DIR$/otter/gym/bullet/cup_push.py" />
+        <option value="$PROJECT_DIR$/otter/gym/bullet/reach.py" />
+        <option value="$PROJECT_DIR$/test/test_reach_env.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="715" />
+    <option name="y" value="-4" />
+    <option name="width" value="651" />
+    <option name="height" value="772" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="pararl-bullet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pararl-bullet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pararl-bullet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pararl-bullet" type="462c0819:PsiDirectoryNode" />
+              <item name="otter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pararl-bullet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pararl-bullet" type="462c0819:PsiDirectoryNode" />
+              <item name="otter" type="462c0819:PsiDirectoryNode" />
+              <item name="gym" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pararl-bullet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pararl-bullet" type="462c0819:PsiDirectoryNode" />
+              <item name="otter" type="462c0819:PsiDirectoryNode" />
+              <item name="gym" type="462c0819:PsiDirectoryNode" />
+              <item name="bullet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pararl-bullet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pararl-bullet" type="462c0819:PsiDirectoryNode" />
+              <item name="otter" type="462c0819:PsiDirectoryNode" />
+              <item name="gym" type="462c0819:PsiDirectoryNode" />
+              <item name="mujoco" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pararl-bullet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pararl-bullet" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/otter/gym/bullet" />
+      <recent name="$PROJECT_DIR$/otter/gym/bullet/assets" />
+      <recent name="$PROJECT_DIR$/experiments/myexp" />
+      <recent name="$PROJECT_DIR$/test" />
+      <recent name="$PROJECT_DIR$/otter" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.test_reach_env">
+    <configuration name="test_cup_push" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pararl-bullet" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test_cup_push.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_gym_env" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pararl-bullet" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test_gym_env.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_reach_env" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pararl-bullet" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test_reach_env.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test_reach_env" />
+        <item itemvalue="Python.test_cup_push" />
+        <item itemvalue="Python.test_gym_env" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_INHERITED" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0fd140cd-0769-446c-a2e9-644a0851a716" name="Default Changelist" comment="" />
+      <created>1560085415560</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560085415560</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992248" visible="true" weight="0.14945227" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24960877" />
+      <window_info id="Favorites" order="2" sideWeight="0.5007752" side_tool="true" weight="0.14945227" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32868218" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.32868218" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.14945227" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="bottom" id="Python Console" order="3" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.32868218" />
+      <window_info active="true" anchor="bottom" id="Debug" order="7" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/experiments/myexp/myexp_demo.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/test_cup_push.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/otter/gym/bullet/cup_push.py</url>
+          <line>151</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/otter/gym/mujoco/reacher.py</url>
+          <line>79</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/otter/gym/bullet/cup_push.py</url>
+          <line>145</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Pipfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/otter/util/ec2.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/otter/gym/bullet/utils.py" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/otter/experiment/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/otter/experiment/myexp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-397">
+          <caret line="77" column="50" selection-start-line="77" selection-start-column="50" selection-end-line="77" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/otter/gym/basic/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/myexp/myexp_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding>
+            <element signature="e#1#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/otter/gym/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540">
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/otter/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/otter/experiment/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="848">
+          <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/otter/gym/mujoco/assets/cup_push.py" />
+    <entry file="file://$PROJECT_DIR$/otter/gym/mujoco/assets/reacher.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/otter/gym/bullet/gym_wrapper.py" />
+    <entry file="file://$PROJECT_DIR$/otter/gym/bullet/env.py" />
+    <entry file="file://$PROJECT_DIR$/otter/gym/mujoco/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/otter/gym/bullet/assets/meshes/obj/arm.obj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/otter/gym/bullet/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/otter/gym/bullet/assets/kinova.py" />
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/site-packages/deepx/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_gym.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/otter/gym/basic/car.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-129">
+          <folding>
+            <element signature="e#1#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.5/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="308" selection-start-line="308" selection-end-line="308" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/1747598057/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="817" column="4" selection-start-line="817" selection-start-column="4" selection-end-line="817" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/otter/gym/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/otter/gym/gym_wrapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-53">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.5/site-packages/gym/envs/mujoco/mujoco_env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="103" column="8" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.5/site-packages/gym/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="42" column="28" lean-forward="true" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_gym_env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding>
+            <element signature="e#1#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/otter/gym/bullet/reacher.py" />
+    <entry file="file://$PROJECT_DIR$/otter/gym/mujoco/reacher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/otter/gym/bullet/cup_push.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4560">
+          <caret line="304" column="58" selection-start-line="304" selection-start-column="58" selection-end-line="304" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/otter/gym/bullet/kinova.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3885">
+          <caret line="259" column="6" selection-start-line="259" selection-start-column="6" selection-end-line="259" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/otter/gym/env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1455">
+          <caret line="105" column="16" selection-start-line="105" selection-start-column="16" selection-end-line="105" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_cup_push.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="52" selection-end-column="27" />
+          <folding>
+            <element signature="e#1#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/otter/gym/bullet/reach.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3180">
+          <caret line="212" column="44" selection-start-line="212" selection-start-column="44" selection-end-line="212" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.5/site-packages/gym/envs/registration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_reach_env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+          <folding>
+            <element signature="e#1#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

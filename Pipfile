@@ -1,0 +1,35 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+
+[packages]
+tensorflow = "==1.12"
+gym = {version = "*",extras = ["box2d", "mujoco"]}
+jupyter = "*"
+path-py = "*"
+ipdb = "*"
+matplotlib = "*"
+opencv-python = "*"
+tqdm = "*"
+mujoco-py = "==1.50.1.68"
+seaborn = "*"
+pygame = "*"
+sklearn = "*"
+notebook = ">=5.7.2"
+kfac = "*"
+fabric = "*"
+"boto3" = "*"
+pandas = "*"
+click = "*"
+
+tensorflow-probability = "*"
+
+
+parasol = {path = ".",editable = true}
+gps = {git = "https://github.com/sharadmv/gps.git",editable = true}
+deepx = "*"
+[requires]
+python_version = "3.6"

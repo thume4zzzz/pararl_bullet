@@ -31,6 +31,7 @@ def generate_noise(dims, std=1.0, smooth=False):
         emp_std = np.std(noise, axis=0)
         noise = std * (noise / emp_std)
     return noise
+
 def noise_function():
     return generate_noise((horizon, env.get_action_dim()),
                                std= data_params['init_std'],

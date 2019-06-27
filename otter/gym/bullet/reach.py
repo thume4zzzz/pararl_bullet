@@ -186,7 +186,7 @@ class GymReach(gym.Env):
         npaction = np.array(
             [action[3]])  # only penalize rotation until learning works well [action[0],action[1],action[3]])
 
-        end_pos = self._observation[0,:3]
+        end_pos = self._observation[0:3]
         pos_delta = end_pos - self.goal_point
 
         reward = self.reward(pos_delta, npaction)
@@ -220,46 +220,46 @@ class GymReach(gym.Env):
         return rgb_array
 
     def _termination(self):
-        state = p.getLinkState(self.kinova.kinovaUid, self.kinova.EndEffectorIndex)
-        actualEndEffectorPos = state[0]
-
-        if (self.terminated or self._envStepCounter > self._maxSteps):
-            self._observation = self._get_obs()
-            return True
-        maxDist = 0.005
-        closestPoints_1 = p.getClosestPoints(self.teacupUid, self.kinova.kinovaUid, maxDist)
-        closestPoints_2 = p.getClosestPoints(self.tableUid, self.kinova.kinovaUid, maxDist)
-
-        if (len(closestPoints_1)):  # (actualEndEffectorPos[2] <= -0.43):
-            self.terminated = 1
-
-            # print("terminating, closing gripper, attempting grasp")
-            # start grasp and terminate
-            fingerAngle = 0.3
-            for i in range(100):
-                graspAction = [0, 0, 0.0001, 0, fingerAngle]
-                self.kinova.ApplyAction(graspAction)
-                p.stepSimulation()
-                fingerAngle = fingerAngle - (0.3 / 100.)
-                if (fingerAngle < 0):
-                    fingerAngle = 0
-
-            for i in range(1000):
-                graspAction = [0, 0, 0.001, 0, fingerAngle]
-                self.kinova.ApplyAction(graspAction)
-                p.stepSimulation()
-                cupPos, cupOrn = p.getBasePositionAndOrientation(self.teacupUid)
-                if (cupPos[2] > 0.23):
-                    # print("BLOCKPOS!")
-                    # print(blockPos[2])
-                    break
-                state = p.getLinkState(self.kinova.kinovaUid, self.kinova.EndEffectorIndex)
-                actualEndEffectorPos = state[0]  ##TODO COM need to modified
-                if (actualEndEffectorPos[2] > 0.5):
-                    break
-
-            self._observation = self._get_obs()
-            return True
+        # state = p.getLinkState(self.kinova.kinovaUid, self.kinova.EndEffectorIndex)
+        # actualEndEffectorPos = state[0]
+        #
+        # if (self.terminated or self._envStepCounter > self._maxSteps):
+        #     self._observation = self._get_obs()
+        #     return True
+        # maxDist = 0.005
+        # closestPoints_1 = p.getClosestPoints(self.teacupUid, self.kinova.kinovaUid, maxDist)
+        # closestPoints_2 = p.getClosestPoints(self.tableUid, self.kinova.kinovaUid, maxDist)
+        #
+        # if (len(closestPoints_1)):  # (actualEndEffectorPos[2] <= -0.43):
+        #     self.terminated = 1
+        #
+        #     # print("terminating, closing gripper, attempting grasp")
+        #     # start grasp and terminate
+        #     fingerAngle = 0.3
+        #     for i in range(100):
+        #         graspAction = [0, 0, 0.0001, 0, fingerAngle]
+        #         self.kinova.ApplyAction(graspAction)
+        #         p.stepSimulation()
+        #         fingerAngle = fingerAngle - (0.3 / 100.)
+        #         if (fingerAngle < 0):
+        #             fingerAngle = 0
+        #
+        #     for i in range(1000):
+        #         graspAction = [0, 0, 0.001, 0, fingerAngle]
+        #         self.kinova.ApplyAction(graspAction)
+        #         p.stepSimulation()
+        #         cupPos, cupOrn = p.getBasePositionAndOrientation(self.teacupUid)
+        #         if (cupPos[2] > 0.23):
+        #             # print("BLOCKPOS!")
+        #             # print(blockPos[2])
+        #             break
+        #         state = p.getLinkState(self.kinova.kinovaUid, self.kinova.EndEffectorIndex)
+        #         actualEndEffectorPos = state[0]  ##TODO COM need to modified
+        #         if (actualEndEffectorPos[2] > 0.5):
+        #             break
+        #
+        #     self._observation = self._get_obs()
+        #     return True
         return False
 
     def reward(self, pos_delta, action):
@@ -267,7 +267,7 @@ class GymReach(gym.Env):
         reward_ctrl = -np.linalg.norm(action) * 10
         dist = -pos_delta
 
-        return reward_dist+reward_ctrl, {'distance': dist}
+        return reward_dist+reward_ctrl
 
 
 class Reach(GymWrapper):

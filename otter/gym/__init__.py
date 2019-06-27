@@ -2,9 +2,8 @@ import contextlib
 with contextlib.redirect_stdout(None):
     from .bullet import *
     from .basic import *
-    from .mujoco import *
 
-ENVS = [CupPush, Reach, SimpleCar, Reacher]
+ENVS = [CupPush, Reach, SimpleCar]
 
 ENV_MAP = { env.environment_name : env for env in ENVS }
 

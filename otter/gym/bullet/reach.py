@@ -193,11 +193,11 @@ class GymReach(gym.Env):
 
         return np.array(self._observation), reward, done, {}
 
-    def render(self, mode="rgb_array", close=False):
+    def render(self, mode="rgb_array"):
         if mode != "rgb_array":
             return np.array([])
 
-        base_pos, orn = self._p.getBasePositionAndOrientation(self._kuka.kukaUid)
+        base_pos, orn = self._p.getBasePositionAndOrientation(self.kinova.kinovaUid)
         view_matrix = self._p.computeViewMatrixFromYawPitchRoll(
             cameraTargetPosition=base_pos,
             distance=self._cam_dist,

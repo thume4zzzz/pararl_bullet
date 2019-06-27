@@ -76,10 +76,9 @@ class GymReach(gym.Env):
         self.observation_space = spaces.Box(-observation_high, observation_high)
         self.viewer = None
 
-        self._hard_reset = self.hard_reset  # This assignment need to be after reset()
+        self._hard_reset = self.hard_reset
 
     def reset(self):
-        # print("KukaGymEnv _reset")
         if self._hard_reset:
 
             p.resetSimulation()

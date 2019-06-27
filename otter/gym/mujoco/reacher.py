@@ -90,7 +90,6 @@ class GymReacher(mujoco_env.MujocoEnv, utils.EzPickle):
             return obs
 
 class Reacher(GymWrapper):
-
     environment_name = 'Reacher'
     entry_point = "otter.gym.mujoco.reacher:GymReacher"
     max_episode_steps = 50

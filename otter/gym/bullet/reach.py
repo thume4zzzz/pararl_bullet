@@ -26,9 +26,9 @@ RENDER_WIDTH = 960
 
 from ..gym_wrapper import GymWrapper
 
-__all__ = ['CupPush']
+__all__ = ['Reach']
 
-class GymCupPush(gym.Env):
+class GymReach(gym.Env):
     metadata = {
         'render.modes': ['human', 'rgb_array'],
         'video.frames_per_second': 50
@@ -106,6 +106,7 @@ class GymCupPush(gym.Env):
             self._CameraViewMatrix = p.computeViewMatrixFromYawPitchRoll([xpos, ypos, zpos], 1, -90, -60, 0, 2)
             # self._CameraProjMatrix = p.computeProjectionMatrix(-0.5000, 0.5000, -0.5000, 1.5000, 1.0000, 6.0000)
             self._CameraProjMatrix = p.computeProjectionMatrixFOV(80, 0.5, 0, 8)
+
 
             self.kinova = kinova.Kinova(p,
                                         robot_type='j2s7s300',
@@ -269,9 +270,9 @@ class GymCupPush(gym.Env):
         return reward_dist+reward_ctrl, {'distance': dist}
 
 
-class CupPush(GymWrapper):
-    environment_name = 'CupPush'
-    entry_point = "otter.gym.bullet.cup_push:GymCupPush"
+class Reach(GymWrapper):
+    environment_name = 'Reach'
+    entry_point = "otter.gym.bullet.reach:GymReach"
     max_episode_steps = 50
     reward_threshold = -3.75
 
@@ -293,7 +294,7 @@ class CupPush(GymWrapper):
             'hard_reset': kwargs.pop('hard_reset', False),
             '_robot_urdfRoot': kwargs.pop('_robot_urdfRoot', os.path.abspath('..')+'/otter/gym/bullet/assets/urdf/'),
         }
-        super(CupPush, self).__init__(config)
+        super(Reach, self).__init__(config)
 
     def torque_matrix(self):
         return 2 * np.eye(self.get_action_dim())

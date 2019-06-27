@@ -3,13 +3,14 @@ import otter.gym as gym
 import numpy as np
 
 env_params = {
-    "environment_name": "CupPush",
+    "environment_name": "Reach",
     "random_start": True,
     "random_target": True,
     "image": True,
     "image_dim": 128,
     "goal_point": [0.5, 0, 0.5]
 }
+
 data_params=dict(
         num_rollouts=10,
         init_std=0.5,
